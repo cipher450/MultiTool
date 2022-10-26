@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+  
+    <link rel="stylesheet" type="text/css" href="res/css/main.css">
+    <link rel="stylesheet" type="text/css" href="res/css/Controls.css">
+</head>
+<body >
+
+<div class="navcontrainer">
+  <div class="Container">
+    <div class="logocontainer">
+      <div class="nav_logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/1505/1505516.png" alt="">
+      </div>
+      <h2 class="nav_titel">MultiTools</h2>
+      
+    </div>
+    
+    <div class="nav_itemcontainer">
+    
+      <div class="dropdown" onclick="showdropdown()">Encoding
+        <div class="dropdown-content">
+          <a class="nav_item" onclick="openpage('B64')" >Base64</a>
+          <a class="nav_item" id="page2" >Compression</a>
+          <a class="nav_item" id="page3">CRC32</a>
+        </div>
+       
+      </div> 
+        
+        <div class="dropdown" onclick="openpage()">Programing
+          <div class="dropdown-content">
+            <a class="nav_item"></a>
+            <a class="nav_item"></a>
+            <a class="nav_item"></a>
+          </div>
+        </div>
+        <div class="dropdown" onclick="showdropdown()">Hacking
+    
+          <div class="dropdown-content">
+            <a class="nav_item"></a>
+            <a class="nav_item"></a>
+            <a class="nav_item"></a>
+          </div>
+
+        
+        
+        </div>
+        <div class="nav_category"></div>
+        
+          </div>
+  </div>
+
+    
+</div>
+<div class="Pageviwer">
+<div class="search_container">
+  
+    <h1 class="Search_titel">What are you looking for ?</h1>
+    <div class="search_area">
+      <input type="text" class="search_txt" placeholder="Encoding Tool , CSS generators , Encryptions ....">
+      <button class="search_btn">Searche</button>
+    </div>
+ 
+ 
+  
+</div>
+<iframe id="pageloader"></iframe>
+  
+</div>
+
+
+
+<div class="footer">
+</div>
+    
+  
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="res/javascript/Effects.js"></script>
+<script src="res/javascript/Explorer.js"></script>
+
+</html>
