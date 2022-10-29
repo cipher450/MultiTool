@@ -1,0 +1,20 @@
+.container_div {
+  display: grid;
+  grid-template-rows: 0.8fr 1fr;
+}
+
+.centered_div {
+  grid-row-start: 2;
+}
+
+.btn {
+  margin: 5px;
+  padding: 5px 30px 5px 30px;
+}
+
+.btns {
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* On screens that are 600px or less, set the background color to olive *//*# sourceMappingURL=PageStyling.css.map */

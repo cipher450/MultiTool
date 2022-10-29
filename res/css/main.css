@@ -1,27 +1,20 @@
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url("/res/HelveticaNeueLight.ttf");
+@import url(/res/css/root.css);
+html {
+  scroll-behavior: smooth;
 }
-@font-face {
-  font-family: "HelveticaBlkIt";
-  src: url("/res/HelveticaBlkIt.ttf");
-}
+
 body {
   background: radial-gradient(circle at top, rgba(5, 26, 219, 0.867), rgb(47, 16, 140));
-  margin: 0;
   color: white;
   font-family: "HelveticaNeue";
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 img {
   width: 100%;
   height: auto;
-}
-
-iframe {
-  border: none;
-  width: 100%;
-  height: 100%;
 }
 
 .footer {
@@ -31,18 +24,19 @@ iframe {
   padding-top: 90px;
 }
 
-.navcontrainer {
+.header {
   font-family: "HelveticaBlkIt";
   display: flex;
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: linear-gradient(circle at top, #1CB5E0 0%, #000851 100%);
+  box-shadow: 1px 1px 1px 1px solid black;
+  background-color: #03021b;
   opacity: 0.8;
   width: 100%;
   transition: opacity 150ms ease-in;
 }
-.navcontrainer:hover {
+.header:hover {
   opacity: 1;
 }
 
@@ -102,12 +96,16 @@ iframe {
   font-weight: 50;
   transition: all 250ms ease-in;
 }
+.dropdown:hover {
+  color: #326ada;
+}
 
 .dropdown-content {
+  margin-top: 19px;
   border-radius: 5px;
   display: none;
   position: absolute;
-  background-image: linear-gradient(60deg, rgba(11, 11, 141, 0.792), rgba(8, 8, 172, 0.792), rgba(2, 2, 202, 0.792));
+  background-color: rgba(3, 2, 27, 0.7333333333);
   min-width: 160px;
   z-index: 1;
 }
@@ -122,17 +120,23 @@ iframe {
   transition: all 200ms ease-in;
 }
 .dropdown-content a:hover {
-  color: black;
+  color: rgb(40, 57, 214);
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-  color: black;
-}
-
-.Pageviwer {
+.content {
   background-color: rgba(40, 40, 40, 0.738);
   display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+iframe {
+  overflow: hidden;
+  height: 90vh;
+  width: 90vh;
+  grid-row-start: 2/2;
+  display: block;
+  width: 100%;
+  border: none;
 }
 
 .search_container {
@@ -147,11 +151,13 @@ iframe {
   grid-row-start: 4;
 }
 
-.Search_titel {
+._titel {
+  font-family: "HelveticaBlkIt";
+  color: whitesmoke;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.847);
   font-size: 4em;
-  font-weight: 960;
+  font-weight: 900;
 }
 
 .search_btn {
