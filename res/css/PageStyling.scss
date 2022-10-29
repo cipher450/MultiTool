@@ -1,27 +1,49 @@
 .container_div{
+   
     display: grid;
-    grid-template-rows: 0.8fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;  
 }
 .centered_div{
+    
     grid-row-start: 2;
+   display: flex;
+   column-gap: 20px;
+   grid-template-columns: 1fr 1fr 1fr;
+ 
+}
+
+.btns{
+   display: flex;
+   gap: 5px;
+    margin: 5px;
+    border-radius: 5px 5px auto auto;
+   
+    padding: 3px;
+    align-items: center;
+  
 }
 .btn{
-    margin: 5px;
-    padding: 5px 30px 5px 30px;
+    min-width: 120px;
+   
 }
-.btns{
-    padding: 5px;
-    margin-top: 20px;
-
+#input_txt,#output_txt{
+ resize: none;
 }
-#lbl_input{}
 
 
-@media screen and (max-width: 992px) {
-    
+@media screen and (min-width: 600px) {
+    .btns{
+        flex-direction: column;
+    }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  
+  .centered_div{
+    flex-direction: column;
+  }
+
 }

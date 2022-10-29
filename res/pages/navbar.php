@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Document</title>
-  
-    <link rel="stylesheet" type="text/css" href="res/css/main.css">
-    <link rel="stylesheet" type="text/css" href="res/css/Controls.css">
-</head>
-<body >
-<div class="box">
+<link rel="stylesheet" type="text/css" href="/res/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/Controls.css">
 
-
+    <link rel="stylesheet" type="text/css" href="/res/css/PageStyling.css">
 <div class="header">
   <div class="Container">
     <div class="logocontainer">
@@ -29,7 +17,7 @@
       <div class="dropdown"  id="1" >Encoding
         <div class="dropdown-content" id="enc">
           <a class="nav_item" onclick="openpage('base64')" >Base64</a>
-          <a class="nav_item" onclick="openpage('1')" >Compression</a>
+          <a class="nav_item" onclick="openpage('1')" >Hex</a>
           <a class="nav_item" onclick="openpage('B64')">CRC32</a>
         </div>
        
@@ -60,30 +48,7 @@
 
     
 </div>
-<div class="content">
-<iframe id="pageloader"></iframe>
-
-<div class="search_container">
-    <div class="search_area">
-      <h1 class="_titel">What are you looking for ?</h1>
-      <input type="text" class="search_txt" placeholder="Encoding Tool , CSS generators , Encryptions ....">
-      <button class="search_btn">Searche</button>
-    </div>
-  
-</div>
-
-  
-</div>
-
-<!-- <div class="footer">
-  lor
-</div> -->
-</div>
-  
-</body>
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 
-<script src="res/javascript/Effects.js"></script>
-<script src="res/javascript/Explorer.js"></script>
-
-</html>
+<script src="/res/javascript/Effects.js"></script>
+<script src="/res/javascript/Explorer.js"></script>

@@ -4,19 +4,27 @@ body {
 }
 
 button {
-  font-weight: 500;
+  background-color: rgb(139, 194, 242);
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   padding: 5px;
   transition: all 350ms ease-in-out;
 }
+button:hover {
+  background-color: rgb(96, 155, 208);
+}
+
 textarea {
   font-family: "HelveticaNeue";
   background-color: rgb(25, 25, 25);
   color: rgb(221, 221, 221);
   transition: all 300ms ease-in-out;
   border-radius: 5px;
+  width: 100%;
+  height: 100%;
   box-shadow: 1.5px 1.5px 1.5px rgb(43, 43, 43);
+  margin: 5px;
 }
 
 input {
@@ -31,11 +39,4 @@ select {
   background: linear-gradient(90deg, rgb(25, 25, 25), rgba(25, 25, 25, 0.624), rgba(25, 25, 25, 0.542));
   background-color: rgb(25, 25, 25);
   color: whitesmoke;
-}
-
-.container_div {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=Controls.css.map */

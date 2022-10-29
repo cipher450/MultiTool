@@ -67,17 +67,14 @@ function openpage(page){
     $("#hack").css('display','none');
     if(page=='home'){
         //Go back to home page
-        search_area.show();
-        $('#pageloader').hide();
-        content.css('grid-template-rows','1fr 1fr')
+        window.location.href='';
+window.location.href='index.php';
     }
     else{
+        window.location.href='';
+        window.location.href='res/pages/'+page+'.php';
 
-        search_area.hide();
-        $('#pageloader').show();
-        pageloader.src='res/pages/'+page+'.html'
-        content.css('grid-template-rows','1fr')
-    
+     
     }
    
 }
