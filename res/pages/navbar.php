@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <link rel="stylesheet" type="text/css" href="/res/css/main.css">
     <link rel="stylesheet" type="text/css" href="/res/css/Controls.css">
 

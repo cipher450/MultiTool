@@ -1,4 +1,9 @@
 
+// prevent the "Confirm Form Resubmission" dialog
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+  }
+ 
 const pageloader= document.getElementById('pageloader');
 const content = $('.content');
 const search_area = $('.search_container');
@@ -67,11 +72,12 @@ function openpage(page){
     $("#hack").css('display','none');
     if(page=='home'){
         //Go back to home page
-        window.location.href='';
-window.location.href='index.php';
+        //Go back to home page
+
+        window.location.href='http://localhost:3000/';
     }
     else{
-        window.location.href='';
+        
         window.location.href='res/pages/'+page+'.php';
 
      

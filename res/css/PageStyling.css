@@ -12,6 +12,7 @@
   -moz-column-gap: 20px;
        column-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+  transition: all 350ms ease-in-out;
 }
 
 .btns {
@@ -27,7 +28,8 @@
   min-width: 120px;
 }
 
-#input_txt, #output_txt {
+#input_txt,
+#output_txt {
   resize: none;
 }
 
@@ -39,6 +41,9 @@
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
   .centered_div {
+    flex-direction: column;
+  }
+  form {
     flex-direction: column;
   }
 }/*# sourceMappingURL=PageStyling.css.map */

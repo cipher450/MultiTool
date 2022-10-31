@@ -39,4 +39,8 @@ select {
   background: linear-gradient(90deg, rgb(25, 25, 25), rgba(25, 25, 25, 0.624), rgba(25, 25, 25, 0.542));
   background-color: rgb(25, 25, 25);
   color: whitesmoke;
+}
+
+form {
+  display: flex;
 }/*# sourceMappingURL=Controls.css.map */

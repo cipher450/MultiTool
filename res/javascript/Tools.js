@@ -8,4 +8,4 @@ function updateResult() {
     console.log(input_txt.value)
 }
 
-input_txt.addEventListener('keyup', updateResult);
+//input_txt.addEventListener('keyup', updateResult);
