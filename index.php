@@ -24,20 +24,31 @@ require("res/pages/navbar.php");
 
   <div class="content">
 
+    <h1 class="_titel">What are you looking for ?</h1>
+    <form action="">
 
     <div class="search_container">
-      <div class="search_area">
-        <h1 class="_titel">What are you looking for ?</h1>
-        <input type="text" class="search_txt" placeholder="Encoding Tool , CSS generators , Encryptions ....">
-        <button class="search_btn">Searche</button>
+    <div class="dropdown_SearchSuggestion" id="1">
+      <div class="dropdown-content_SearchSuggestion" id="enc">
+        <a class="nav_item" onclick="openpage('base64')">Base64</a>
+        <a class="nav_item" onclick="openpage('1')">Hex</a>
+        <a class="nav_item" onclick="openpage('B64')">CRC32</a>
       </div>
-
+      <input type="text" class="search_txt" placeholder="Encoding Tool , CSS generators , Encryptions ....">
+      <button class="search_btn">Searche</button>
+     
+     
     </div>
 
 
-  </div>
+    </form>
+   
 
-  <!-- <div class="footer">
+   
+
+    </div>
+
+    <!-- <div class="footer">
   lor
 </div> -->
 

@@ -43,4 +43,22 @@ select {
 
 form {
   display: flex;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at bottom, rgba(200, 200, 200, 0.708), rgb(16, 140, 103));
+  color: white;
+  font-family: "HelveticaNeue";
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=Controls.css.map */

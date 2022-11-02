@@ -79,7 +79,7 @@ function Decode($encd_type, $strr)
             </div>
 
             <div class="btns">
-               <select name="Encoding" id="">
+               <select name="Encoding" id="combobox">
                   <option value="1" <?= $_SESSION["ENCODING_"] == '1' ? ' selected="selected"' : '';?>>Base64</option>
                   <option value="2" <?= $_SESSION["ENCODING_"] == '2' ? ' selected="selected"' : '';?> >Hex</option>
                </select>
