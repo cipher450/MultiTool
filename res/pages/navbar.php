@@ -19,23 +19,28 @@ session_start();
 
     </div>
     <ul class="nav-list">
-      <li class="nav-item">
-        <a class="nav-link active" href="/res/pages/base64.php">
+      <li class="nav-item"  >
+        <a class="nav-link active" href="../../index.php" id="nvItem_1">
+          Home
+        </a>
+      </li> 
+      <li class="nav-item" >
+        <a class="nav-link " href="/res/pages/base64.php" id="nvItem_2">
           Encoding
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <li class="nav-item" >
+        <a class="nav-link" href="/res/pages/Programing.php" id="nvItem_3">
           Programing
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <li class="nav-item" >
+        <a class="nav-link" href="#" id="nvItem_4">
           Hacking
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <li class="nav-item" >
+        <a class="nav-link" href="/res/pages/Calculations.php" id="nvItem_5">
           Calculations
         </a>
       </li>

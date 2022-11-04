@@ -1,17 +1,47 @@
 .container_div {
-  display: grid;
-  grid-template-rows: 0.2fr 1fr;
-  margin: 10px;
+ display:grid;
+ grid-template-columns: 0.2fr 1fr;
+
+ column-gap: 5px;
+ margin: 0;
   justify-content: center;
   align-items: center;
 }
 .centered_div {
-
-  grid-row-start: 2;
-  display: flex;
-
+  grid-column-start: 2;
+  grid-row-start: 1;
+  height: 90vh;
+  margin: 0;
   
   transition: all 350ms ease-in-out;
+}
+.centered_div iframe{
+  height: 90vh;
+  width: 80vw;
+  border: none;
+  padding: 5px;
+}
+.sidebar{
+  justify-items: center;
+  margin: 0;
+ padding: 5px;
+ height: 93vh;
+background-color: rgba(40, 40, 40, 0.751);
+
+}
+
+.navlist li{
+ 
+  cursor: pointer;
+  font-family: "HelveticaNeue_Light";
+  
+ list-style-type: none;
+  font-size: larger;
+  text-align:start;
+  padding: 10px;
+  &:hover{
+    background-color: cadetblue;
+  }
 }
 
 .btns {
@@ -29,10 +59,12 @@
 #input_txt,
 #output_txt {
   resize: none;
+  
 }
 #combobox{
   margin-left: 5px;
 }
+
 
 @media screen and (min-width: 600px) {
   .btns {
@@ -56,4 +88,9 @@
   button{
     margin: 5px;
   }
+  #input_txt,
+#output_txt {
+  height: 200px;
+  
+}
 }

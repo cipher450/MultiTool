@@ -125,6 +125,7 @@
 }
 
 .logocontainer {
+  cursor: pointer;
   display: flex;
   padding-right: 50px;
   float: left;
