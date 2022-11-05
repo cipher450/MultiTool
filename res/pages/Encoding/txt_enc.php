@@ -106,4 +106,5 @@ In computer programming, Base64 is a group of binary-to-text encoding schemes th
 </p>
 <h2>Where to use it ?</h2>
 </body>
+<script src="/node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 </html>

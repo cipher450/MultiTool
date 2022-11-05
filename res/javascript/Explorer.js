@@ -3,7 +3,7 @@ if (window.history.replaceState) {
   window.history.replaceState(null, null, window.location.href);
 }
 
-const pageloader = document.getElementById("pageloader");
+
 const content = $(".content");
 const search_area = $(".search_container");
 
@@ -97,3 +97,23 @@ function navbaritem_SetActive() {
   }
 }
 navbaritem_SetActive();
+
+
+// loading selected page from the SideBar
+function loadpage(id){
+  let pageviwer = document.getElementById('pageviwer') ;
+  switch (id){
+    case '1':
+      pageviwer.src="Encoding/txt_enc.php";
+
+    break;
+   case '2':
+    pageviwer.src="Encoding/hash_gen.php";
+    break;
+    case '3':
+    
+    break;
+    
+  }
+
+}

@@ -19,4 +19,5 @@
 
 <script src="/res/javascript/Effects.js"></script>
 <script src="/res/javascript/Explorer.js"></script>
+
 </html>

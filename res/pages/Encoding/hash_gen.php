@@ -1,3 +1,6 @@
+<?php
+include_once("/var/www/html/MultiTool/res/pages/res.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

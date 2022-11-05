@@ -5,7 +5,7 @@
  column-gap: 5px;
  margin: 0;
   justify-content: center;
-  align-items: center;
+ 
 }
 .centered_div {
   grid-column-start: 2;
@@ -16,16 +16,21 @@
   transition: all 350ms ease-in-out;
 }
 .centered_div iframe{
-  height: 90vh;
-  width: 80vw;
+ 
+  width: 1px;
+  min-width: 100%;
   border: none;
-  padding: 5px;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F33.media.tumblr.com%2F4fbb61f48f4c5cfa451a88e14f6579e7%2Ftumblr_mwwh9w2vJf1s6294bo1_400.gif&f=1&nofb=1&ipt=9aab99f5cc079cd572c2febedd9fb3740558a802a149d3c0c36fbfb9898d4b1d&ipo=images');
+  image-rendering:optimizeSpeed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .sidebar{
   justify-items: center;
   margin: 0;
- padding: 5px;
- height: 93vh;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 background-color: rgba(40, 40, 40, 0.751);
 
 }
