@@ -3,7 +3,7 @@ include_once("/var/www/html/MultiTool/res/pages/res.php");
 $inputtext;
 $outputtext;
 if (isset($_POST['submit1'])) {
-   $_SESSION["ENCODING_"] = $_POST['Encoding'];
+   $_SESSION["ENCODING_txt"] = $_POST['Encoding'];
    if (!empty($_POST['Encoding'])) {
       //encode
 
@@ -16,7 +16,7 @@ if (isset($_POST['submit1'])) {
       }
    }
 } elseif (isset($_POST['submit2'])) {
-   $_SESSION["ENCODING_"] = $_POST['Encoding'];
+   $_SESSION["ENCODING_txt"] = $_POST['Encoding'];
    //Decode
    $selected = $_POST['Encoding'];
    $outputtext = $_POST['output_txt'];
@@ -74,9 +74,9 @@ function Decode($encd_type, $strr)
 
 <div class="btns">
     <select name="Encoding" id="combobox">
-        <option value="1" <?= $_SESSION["ENCODING_"] == '1' ? ' selected="selected"' : ''; ?>>Base64
+        <option value="1" <?= $_SESSION["ENCODING_txt"] == '1' ? ' selected="selected"' : ''; ?>>Base64
         </option>
-        <option value="2" <?= $_SESSION["ENCODING_"] == '2' ? ' selected="selected"' : ''; ?>>Hex
+        <option value="2" <?= $_SESSION["ENCODING_txt"] == '2' ? ' selected="selected"' : ''; ?>>Hex
         </option>
     </select>
     <button class="btn" type="submit" name="submit1">Encode</button>
@@ -92,6 +92,7 @@ function Decode($encd_type, $strr)
 </div>
 
 </form>
+<div class="txt">
 <br>
 <h1>What is Base64 ?</h1>
 <p>
@@ -105,6 +106,8 @@ In computer programming, Base64 is a group of binary-to-text encoding schemes th
 <a href="https://en.wikipedia.org/wiki/Base64">Wikipedia</a> 
 </p>
 <h2>Where to use it ?</h2>
+</div>
+
 </body>
 <script src="/node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 </html>

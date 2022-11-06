@@ -1,8 +1,7 @@
 .container_div {
  display:grid;
- grid-template-columns: 0.2fr 1fr;
+ grid-template-columns: 0fr 1fr;
 
- column-gap: 5px;
  margin: 0;
   justify-content: center;
  
@@ -29,22 +28,32 @@
   justify-items: center;
   margin: 0;
   height: 100%;
-  width: 100%;
+  width: 25%;
   padding: 10px;
 background-color: rgba(40, 40, 40, 0.751);
-
+transition: all 250ms ease-in-out;
+ 
+}
+.sidebarshow{
+ 
+  height: 100%;
+  width: 100%;
 }
 
+.navlist{
+  display: none;
+}
 .navlist li{
- 
+  top:5px;
   cursor: pointer;
   font-family: "HelveticaNeue_Light";
-  
+  display: flex;
  list-style-type: none;
   font-size: larger;
   text-align:start;
   padding: 10px;
-  &:hover{
+flex-direction: row
+;  &:hover{
     background-color: cadetblue;
   }
 }
@@ -70,7 +79,42 @@ background-color: rgba(40, 40, 40, 0.751);
   margin-left: 5px;
 }
 
-
+.form_hash{
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+._btn{
+  max-width: 100px;
+  margin-left: 10px;
+  padding: 10px;
+ 
+}
+.txt{
+  margin: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(15, 15, 15);
+}
+.GenHash_table {
+  background-color: rgb(15, 15, 15);
+  width: fit-content;
+ 
+}
+.GenHash_table tr {
+  background-color: rgb(18, 18, 18);
+  width: fit-content;
+}
+.GenHash_table th {
+  background-color: rgb(30, 30, 30);
+  width: fit-content;
+  padding: 8px;
+}
+.GenHash_table td {
+  width: 400px;
+}
 @media screen and (min-width: 600px) {
   .btns {
     flex-direction: column;

@@ -58,45 +58,8 @@ function showdropdown(clicked) {
       break;
   }
 }
-// adding the class .activ to the current selected page
-function navbaritem_SetActive() {
-  let nvItem_1 = $("#nvItem_1");
-  let nvItem_2 = $("#nvItem_2");
-  let nvItem_3 = $("#nvItem_3");
-  let nvItem_4 = $("#nvItem_4");
-  let nvItem_5 = $("#nvItem_5");
-  switch (true) {
-    case window.location.href.includes("base64.php"):
-      nvItem_1.removeClass("active");
-      nvItem_3.removeClass("active");
-      nvItem_4.removeClass("active");
-      nvItem_5.removeClass("active");
-      nvItem_2.addClass("active");
-      break;
-    case window.location.href.includes("index.php"):
-      nvItem_1.addClass("active");
-      nvItem_2.removeClass("active");
-      nvItem_3.removeClass("active");
-      nvItem_4.removeClass("active");
-      nvItem_5.removeClass("active");
-      break;
-    case window.location.href.includes("Programing.php"):
-      nvItem_1.removeClass("active");
-      nvItem_2.removeClass("active");
-      nvItem_3.addClass("active");
-      nvItem_4.removeClass("active");
-      nvItem_5.removeClass("active");
-      break; 
-       case window.location.href.includes("Calculations.php"):
-      nvItem_1.removeClass("active");
-      nvItem_2.removeClass("active");
-      nvItem_3.removeClass("active");
-      nvItem_4.removeClass("active");
-      nvItem_5.addClass("active");
-      break;
-  }
-}
-navbaritem_SetActive();
+
+
 
 
 // loading selected page from the SideBar
@@ -105,15 +68,16 @@ function loadpage(id){
   switch (id){
     case '1':
       pageviwer.src="Encoding/txt_enc.php";
-
+     
     break;
    case '2':
     pageviwer.src="Encoding/hash_gen.php";
     break;
     case '3':
-    
+      pageviwer.src="Encoding/wrld_hash.php";
     break;
     
   }
 
 }
+ 

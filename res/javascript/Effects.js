@@ -1,11 +1,11 @@
-const pageviewr =$('.Pageviwer');
-const Navbar = $('.navcontrainer');
+
+
 
 
 const ShowDrop=false;
 const search_titel = $('.Search_titel');
 
-const iframe =$('iframe');
+
 //#region  Dropdown
 // function showdropdown(){
   
@@ -33,10 +33,20 @@ search_titel.animate({
  
 });
 
-iframe.hide();
+let sidebar = $('.sidebar');
+let navlist =$('.navlist');
+let container_div =$('.container_div');
 
+function sideshow(){
+  console.log('show')
+  sidebar.addClass('sidebarshow')
+  navlist.show();
+  container_div.css("grid-template-columns","0.2fr 1fr");
+}
+function sidehide(){
+  console.log('show')
+  sidebar.removeClass('sidebarshow')
+  navlist.hide();
+  container_div.css("grid-template-columns","0fr 1fr");
 
-
-
-
-
+}

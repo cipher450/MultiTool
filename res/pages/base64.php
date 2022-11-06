@@ -1,5 +1,6 @@
 <?php
 require("navbar.php");
+
 // #region
 
 // #endregion
@@ -30,11 +31,14 @@ require("navbar.php");
         <div class="centered_div">
             <iframe src="/res/pages/Encoding/txt_enc.php" id="pageviwer"> </iframe>
         </div>
-        <div class="sidebar">
+        <div class="sidebar" onmouseover="sideshow()" onmouseout="sidehide()">
+        <div class="sidebar_icons">
+      
+        </div>
             <ul class="navlist">
-                <li onclick="loadpage('1')">Text Encoding</li>
+                <li i onclick="loadpage('1')">Text Encoding</li>
                 <li onclick="loadpage('2')">Hash Generator</li>
-                <li>Wordlist to hash</li>
+                <li onclick="loadpage('3')">Wordlist to hash</li>
                 <li>Option</li>
                 <li>Option</li>
             </ul>
@@ -48,8 +52,7 @@ require("navbar.php");
 <script>
   iFrameResize({ }, '#pageviwer')
 </script>
-<script src="/res/javascript/Tools.js"></script>
-<script src="/res/javascript/layouts.js"></script>
 
+<script src="/res/javascript/Effects.js"></script>
 
 </html>
